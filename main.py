@@ -26,7 +26,7 @@ def keras():
     image = request.args.get('url')
     threshold = int(request.args.get("threshold"))
     #Follow all the neccessary steps to get the prediction of your image. 
-    image = loadImage(image)
+    image = LoadImage(image)
     #turn the image into a numpy array
     image_array = np.asarray(image)
     # Normalize the image
